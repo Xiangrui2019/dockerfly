@@ -1,6 +1,6 @@
 <link type="text/css" rel="styleSheet" href="/dockerfly/static/css/app.css" />
 
-<div class="bt-form">
+<div class="bt-form" id="app">
     <div class="bt-w-main">
         <!--菜单部分-->
         <div class="bt-w-menu">
@@ -13,13 +13,24 @@
         <!--内容部分-->
         <div class="bt-w-con pd15">
             <div class="plugin_body">
-                dafsffdf
+                <div class="home" v-show="homePageDisplay == true">
+                </div>
+                <div class="site" v-show="sitePageDisplay == true">
+                </div>
+                <div class="service" v-show="servicePageDisplay == true">
+                </div>
+                <div class="log" v-show="logPageDisplay == true">
+                </div>
+                <div class="help" v-show="helpPageDisplay == true">
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <!--JS脚本部分，不要将JS脚本写在其它地方-->
+<script type="text/javascript" src="/dockerfly/static/js/vue.min.js"></script>
+<script type="text/javascript" src="/dockerfly/static/js/axios.min.js"></script>
 <script type="text/javascript" src="/dockerfly/static/js/init.js"></script>
 <script type="text/javascript" src="/dockerfly/static/js/app.js"></script>
 <script type="text/javascript">
