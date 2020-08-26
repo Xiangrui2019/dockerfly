@@ -1,0 +1,9 @@
+{
+  "title": "Docker 快速网站部署工具",
+  "name": "dockerfly",
+  "ps": "Docker 容器化快速网站部署工具, 可以部署各种语言的网站, 新手福利.",
+  "versions": "1.0",
+  "checks": "/www/server/panel/plugin/dockerfly",
+  "author": "HomeServing",
+  "home": "http://www.homeserving.xyz"
+}
