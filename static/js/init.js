@@ -1,3 +1,5 @@
+'use strict';
+
 // 定义窗口尺寸
 $('.layui-layer-page').css({ 'width': '900px' });
 
