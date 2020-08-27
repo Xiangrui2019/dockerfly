@@ -4,24 +4,34 @@
     <div class="bt-w-main">
         <!--菜单部分-->
         <div class="bt-w-menu">
-            <p class="bgw" onclick="demo.get_index()">概览</p>
-            <p onclick="demo.get_logs()">网站管理</p>
-            <p onclick="demo.get_logs()">服务管理</p>
-            <p onclick="demo.get_logs()">日志管理</p>
-            <p onclick="demo.get_logs()">帮助文档</p>
+            <p class="bgw" onclick="dockerfly.homeDisplay()">概览</p>
+            <p onclick="dockerfly.siteDisplay()">网站管理</p>
+            <p onclick="dockerfly.serviceDisplay()">服务管理</p>
+            <p onclick="dockerfly.logDisplay()">日志管理</p>
+            <p onclick="dockerfly.helpDisplay()">帮助文档</p>
         </div>
         <!--内容部分-->
         <div class="bt-w-con pd15">
             <div class="plugin_body">
-                <div class="home" v-show="homePageDisplay == true">
+                <div class="home" style="display: inline;">
+                    <h1 style="text-align: center; margin-top: 20%;">欢迎使用Docker网站快速部署工具</h1>
+                    <div class="desc" style="text-align: center; font-size: 18px;">
+                        <p>本工具可以快速部署使用Docker打包的应用, 也支持部署后端微服务.</p>
+                        <p>本工具完全免费开源, <a href="https://github.com/Xiangrui2019/dockerfly">Github</a></p>
+                        <p>Copyright HomeServing 2020</p>
+                    </div>
                 </div>
-                <div class="site" v-show="sitePageDisplay == true">
+                <div class="site" style="display: none;">
+                    b
                 </div>
-                <div class="service" v-show="servicePageDisplay == true">
+                <div class="service" style="display: none;">
+                    c
                 </div>
-                <div class="log" v-show="logPageDisplay == true">
+                <div class="log" style="display: none;">
+                    d
                 </div>
-                <div class="help" v-show="helpPageDisplay == true">
+                <div class="help" style="display: none;">
+                    e
                 </div>
             </div>
         </div>
@@ -29,9 +39,8 @@
 </div>
 
 <!--JS脚本部分，不要将JS脚本写在其它地方-->
-<script type="text/javascript" src="/dockerfly/static/js/vue.min.js"></script>
-<script type="text/javascript" src="/dockerfly/static/js/axios.min.js"></script>
 <script type="text/javascript" src="/dockerfly/static/js/init.js"></script>
+<script type="text/javascript" src="/dockerfly/static/js/home.js"></script>
 <script type="text/javascript" src="/dockerfly/static/js/app.js"></script>
 <script type="text/javascript">
     /**
